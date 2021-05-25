@@ -1,20 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueRouter from 'vue-router';
-import HelloWorld from './components/HelloWord/HelloWorld.vue';
 
- Vue.use(VueRouter);
+import router from './Routes.js';
 
 Vue.config.productionTip = false
-
-const router = new VueRouter({
-  routes: [
-    { 
-      path:'/cadastro',
-      component: HelloWorld
-    }  
-  ]
-})
 
 new Vue({
   router,
